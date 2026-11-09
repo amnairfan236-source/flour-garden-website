@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Flour Garden — Artisan Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="topbar">Free delivery on orders over $40 — baked fresh, delivered warm</div>
+
+    <header class="nav" id="nav">
+      <div class="container nav-inner">
+        <a href="#home" class="brand">
+          <span class="brand-mark">🌾</span>
+          The Flour Garden
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="btn btn-primary" style="padding:9px 20px">Order Now</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-bg"><img src="https://images.pexels.com/photos/32459865/pexels-photo-32459865.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Warm bakery interior" /></div>
+      <div class="container hero-content">
+        <span class="hero-eyebrow">Artisan Bakery · Est. 2014</span>
+        <h1>Where every loaf has a <em>story</em> to tell.</h1>
+        <p class="lead">Slow-fermented breads, butter-layered pastries and cakes baked with stone-milled flour — crafted by hand every morning before the sun rises.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-light">Explore the Menu</a>
+          <a href="#about" class="btn btn-outline-light">Our Story</a>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <span class="line"></span>
+      </div>
+    </section>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>● Fresh sourdough daily&nbsp;&nbsp;✦&nbsp;&nbsp;Stone-milled flour&nbsp;&nbsp;✦&nbsp;&nbsp;48-hour fermentation&nbsp;&nbsp;✦&nbsp;&nbsp;Hand-shaped pastries&nbsp;&nbsp;✦&nbsp;&nbsp;Locally sourced&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+        <span>● Fresh sourdough daily&nbsp;&nbsp;✦&nbsp;&nbsp;Stone-milled flour&nbsp;&nbsp;✦&nbsp;&nbsp;48-hour fermentation&nbsp;&nbsp;✦&nbsp;&nbsp;Hand-shaped pastries&nbsp;&nbsp;✦&nbsp;&nbsp;Locally sourced&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+      </div>
+    </div>
+
+    <section class="about reveal" id="about">
+      <div class="container about-grid">
+        <div class="about-img">
+          <img src="https://images.pexels.com/photos/8351672/pexels-photo-8351672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Cozy bakery ambiance with pastries" />
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">Our Story</span>
+          <h2>Born from a love of slow, honest bread.</h2>
+          <p>The Flour Garden began in a tiny corner shop with one wood-fired oven and a stubborn belief: that good bread takes time. A decade later, we still mix every dough by hand and let our wild yeast work overnight.</p>
+          <p>Our flour is stone-milled by a family farm two hours away, our butter is churned locally, and nothing leaves the kitchen we wouldn't serve at our own table.</p>
+          <div class="about-stats">
+            <div class="stat"><strong>10+</strong><span>Years of baking</span></div>
+            <div class="stat"><strong>48h</strong><span>Slow fermentation</span></div>
+            <div class="stat"><strong>100%</strong><span>Hand-shaped daily</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">The Menu</span>
+          <h2>Baked this morning, gone by noon.</h2>
+          <p>A rotating selection of what's coming out of our ovens. Come early — the best loaves never wait around.</p>
+        </div>
+
+        <div class="menu-tabs reveal" id="menuTabs">
+          <button class="tab active" data-cat="croissants">Croissants</button>
+          <button class="tab" data-cat="cakes">Cakes</button>
+          <button class="tab" data-cat="breads">Breads</button>
+          <button class="tab" data-cat="treats">Sweet Treats</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-item reveal">
+            <div class="feature-icon">🌱</div>
+            <h3>Stone-Milled Flour</h3>
+            <p>Sourced from a single family farm and milled fresh weekly to keep every grain of flavor.</p>
+          </div>
+          <div class="feature-item reveal">
+            <div class="feature-icon">⏳</div>
+            <h3>48-Hour Ferment</h3>
+            <p>Our wild sourdough starter has been alive since day one, rested and folded for two full days.</p>
+          </div>
+          <div class="feature-item reveal">
+            <div class="feature-icon">🤲</div>
+            <h3>Hand-Shaped Daily</h3>
+            <p>Every loaf and pastry is shaped by hand before sunrise — no machines, no shortcuts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Straight from the oven</span>
+          <h2>A peek inside our kitchen</h2>
+          <p>Golden crusts, flaky layers and just-baked moments from our daily bake.</p>
+        </div>
+        <div class="gallery reveal" id="galleryContainer"></div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Kind Words</span>
+          <h2>Loved by the neighborhood.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <blockquote>"The sourdough here ruined every other bread for me. That crackly crust is worth waking up early for."</blockquote>
+            <div class="testimonial-author"><div class="avatar">M</div><div class="who"><strong>Mariam K.</strong><span>Regular since 2019</span></div></div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Ordered a chocolate hazelnut cake for my mother's birthday — it disappeared in ten minutes. Absolutely divine."</blockquote>
+            <div class="testimonial-author"><div class="avatar">D</div><div class="who"><strong>Daniel R.</strong><span>First-time visitor</span></div></div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Warm, cozy little spot. The almond croissant with a flat white on a rainy morning — nothing beats it."</blockquote>
+            <div class="testimonial-author"><div class="avatar">S</div><div class="who"><strong>Sara L.</strong><span>Weekend regular</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="eyebrow">Visit Us</span>
+          <h2>Come say hello.</h2>
+          <p>Whether you're after a warm loaf, a custom cake, or just a quiet corner with a croissant — our door is open from dawn till evening.</p>
+
+          <div class="contact-detail">
+            <div class="ic">📍</div>
+            <div><strong>Address</strong><span>42 Old Mill Lane, Rosewood District</span></div>
+          </div>
+          <div class="contact-detail">
+            <div class="ic">🕑</div>
+            <div><strong>Hours</strong><span>Tue – Sun · 7:00 AM – 7:00 PM</span></div>
+          </div>
+          <div class="contact-detail">
+            <div class="ic">📞</div>
+            <div><strong>Phone</strong><span>(555) 014-2289</span></div>
+          </div>
+          <div class="contact-detail">
+            <div class="ic">✉️</div>
+            <div><strong>Email</strong><span>hello@flourgarden.co</span></div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-success" id="formSuccess">✓ Thanks! Your message has been received — we'll reply within a day.</div>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@email.com" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Custom cake order, catering…" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what you're craving…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="brand"><span class="brand-mark">🌾</span>The Flour Garden</div>
+            <p>Slow-fermented, hand-shaped breads and pastries baked fresh every morning since 2014.</p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Visit</h4>
+            <ul>
+              <li><a href="#contact">42 Old Mill Lane</a></li>
+              <li><a href="#contact">Tue–Sun, 7AM–7PM</a></li>
+              <li><a href="#contact">(555) 014-2289</a></li>
+              <li><a href="#contact">hello@flourgarden.co</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Newsletter</h4>
+            <p style="font-size:14px;margin-bottom:14px">Weekly bake schedule & seasonal specials, straight to your inbox.</p>
+            <div class="socials">
+              <a href="#" aria-label="Instagram">📷</a>
+              <a href="#" aria-label="Facebook">📘</a>
+              <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span id="currentYear"></span>
+          <span>Hand-built with HTML, CSS & JS.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
